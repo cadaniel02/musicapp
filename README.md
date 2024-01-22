@@ -36,11 +36,13 @@ These instructions will help you set up and run the Music Controller Web Applica
 
 4. Install JavaScript dependencies:
 
+   ```bash
    cd frontend
    npm install
 
 5. Apply database migrations:
 
+  ```bash
   python manage.py makemigrations
   python manage.py migrate
 
