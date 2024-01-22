@@ -30,20 +30,26 @@ These instructions will help you set up and run the Music Controller Web Applica
    cd music-controller-app
 
 2. Set up Spotify API credentials:
+   
+     Create a Spotify Developer Account and register your application.
+     
+     Add a .env file with your Spotify API credentials to the root directory.
 
-  Create a Spotify Developer Account and register your application.
-  Add a .env file with your Spotify API credentials to the root directory.
-
-4. Install JavaScript dependencies:
+3. Install JavaScript dependencies:
 
    ```bash
    cd frontend
    npm install
 
-5. Apply database migrations:
+4. Apply database migrations:
 
-  ```bash
-  python manage.py makemigrations
-  python manage.py migrate
+     ```bash
+     python manage.py makemigrations
+     python manage.py migrate
+
+5. Start the development server:
+
+     ```bash
+     python manage.py runserver
 
 6. Access the application in your web browser at http://localhost:8000.
